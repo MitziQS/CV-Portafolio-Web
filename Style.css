@@ -1,0 +1,112 @@
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* HEADER */
+#header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1000;
+}
+
+#header.scrolled {
+  background-color: rgba(255, 255, 255, 0.95); /* Ajusta opacidad/color si deseas */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* BODY */
+body {
+  font-family: 'Manrope', sans-serif;
+  background-color: #F7F7F7;
+}
+
+/* LINKS */
+a {
+  color: #229B22;
+}
+
+/* BANNER */
+.banner {
+  position: relative;
+  width: 100%;
+  height: calc(72vh - 100px);
+  background-image: url(Imagenes/Background-header.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contenido {
+  margin: 0;
+  padding: 10%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contenido h1 {
+  margin: 0;
+  font-size: 56px;
+}
+
+.contenido p {
+  margin: 32px 0;
+  font-size: 18px;
+}
+
+.button-flex {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 0;
+  font-weight: bold;
+}
+
+.horizontal-divider {
+  width: 32px;
+}
+
+.bloque-con-margen {
+  margin: 80px 0;
+}
+
+/* CARDS */
+.card {
+  padding: 16px;
+  background-color: #F9F9F9;
+}
+
+.card-cover {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.rounded-4 {
+  border-radius: var(--bs-border-radius-xl) !important;
+}
+
+.h-100 {
+  height: 100% !important;
+}
+
+.shadow-lg {
+  box-shadow: var(--bs-box-shadow-lg) !important;
+}
+
+.overflow-hidden {
+  overflow: hidden !important;
+}
+
+.text-bg-dark {
+  color: #fff !important;
+  background-color: RGBA(var(--bs-dark-rgb), var(--bs-bg-opacity, 1)) !important;
+}
