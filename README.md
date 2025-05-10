@@ -53,8 +53,6 @@ Bienvenida/o a mi portafolio web personal. Este sitio está diseñado para mostr
 Si deseas saber más sobre mi trabajo o colaborar en algún proyecto:
 
 - [LinkedIn](https://www.linkedin.com/in/soria-mitzi/)
-- [Behance](https://www.behance.net/mitziquintero1)
-
 ---
 
 Gracias por visitar ✨
