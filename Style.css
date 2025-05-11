@@ -78,9 +78,7 @@ a.card-link {
   display: block;
 }
 
-/**** PROYECTO-1 ****/
-/* MAIN-BANNER-PROYECTO-1 */
-
+/**** GLOBAL PROYECTOS ****/
 /* HEADER */
 #header {
   top: 0;
@@ -102,16 +100,40 @@ a.card-link {
   text-decoration: none;
 }
 
+
 /* MAIN-BANNER-PROYECTO-1 imagen */
 .main-banner-proyecto-1 {
   position: relative;
   width: 100%;
   height: calc(50vh - 100px);
-  background-image: url(imagenes/Background-Proyecto-1.jpeg);
+  background-image: url(imagenes/Background-Proyecto-1.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/* MAIN-BANNER-PROYECTO-2 imagen */
+.main-banner-proyecto-2 {
+  position: relative;
+  width: 100%;
+  height: calc(50vh - 100px);
+  background-image: url(imagenes/Background-Proyecto-2.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* MAIN-BANNER-PROYECTO-3 imagen */
+.main-banner-proyecto-3 {
+  position: relative;
+  width: 100%;
+  height: calc(50vh - 100px);
+  background-image: url(imagenes/Background-Proyecto-3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 
 /* MAIN-BANNER-PROYECTO-1 Centrado en x,y */
 .contenido {
@@ -134,11 +156,24 @@ a.card-link {
   gap: 24px;
 }
 
-/**** PROYECTO-2 ****/
-/* HEADER */
 
-/**** PROYECTO-4 ****/
-/* HEADER */
+/*CONTAINER GRIS*/
+.background-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background-color: #333333;
+  border-radius: 6px;
+  padding: 16px 20px;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+}
+
+.p {
+  margin: 0;
+  color: #ffffff;
+  font-size: 0.95rem;
+}
 
 
 /**** Responsivo Global ****/
