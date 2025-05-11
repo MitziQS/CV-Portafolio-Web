@@ -1,201 +1,241 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Mitzi Soria | Product Designer</title>
+  <title>Mitzi Soria | Product Designer</title>
 
-    <!--Vincula bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!--Vincula bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <!--Vincula CSS -->
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
-    <!--tipografia -->
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&display=swap" rel="stylesheet">
+  <!--Vincula CSS -->
+  <link rel="stylesheet" type="text/css" href="style.css">
 
-    <!--animate style-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-  </head>
+  <!--tipografia -->
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&display=swap" rel="stylesheet">
 
-  <body>
-    <!--Header-->
-    <nav id="header" class="navbar navbar-expand-lg fixed-top mi-navbar">
-      <div class="container d-flex justify-content-between align-items-center">
-        <a class="navbar-brand" href="#">
-          <img src="imagenes/Logo-personal.png" width="32" height="32" alt="Logo" onerror="this.onerror=null; this.src='default-logo.png';">
-          <span class="fw-bold">Mitzi Soria</span>
+  <!--animate style-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+
+<body>
+  <!--Header-->
+  <nav id="header" class="navbar navbar-expand-lg fixed-top mi-navbar">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a class="navbar-brand" href="#">
+        <img src="imagenes/Logo-personal.png" width="32" height="32" alt="Logo"
+          onerror="this.onerror=null; this.src='default-logo.png';">
+        <span class="fw-bold">Mitzi Soria</span>
+      </a>
+
+      <!-- Enlaces a redes -->
+      <div class="d-flex align-items-center gap-3">
+        <a href="https://www.linkedin.com/in/soria-mitzi/" target="_blank">
+          <img src="imagenes/linkedin-white.png" alt="LinkedIn" width="32" height="32"
+            onerror="this.onerror=null; this.src='default-linkedin-icon.png';">
         </a>
 
-        <!-- Enlaces a redes -->
-        <div class="d-flex align-items-center gap-3">
-          <a href="https://www.linkedin.com/in/soria-mitzi/" target="_blank">
-            <img src="imagenes/linkedin-white.png" alt="LinkedIn" width="32" height="32" onerror="this.onerror=null; this.src='default-linkedin-icon.png';">
-          </a>
-
-          <a href="https://www.behance.net/mitziquintero1" target="_blank">
-            <img src="imagenes/Behance-white.png" alt="Behance" width="32" height="32" onerror="this.onerror=null; this.src='default-behance.png';">
-          </a>
-        </div>
+        <a href="https://www.behance.net/mitziquintero1" target="_blank">
+          <img src="imagenes/Behance-white.png" alt="Behance" width="32" height="32"
+            onerror="this.onerror=null; this.src='default-behance.png';">
+        </a>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <!--Banner -->
-    <div class="main-banner">
-      <div class="contenido">
-        <h1 class="animate__animated animate__fadeInDown">Hola, soy Mitzi</h1>
-        <p>Diseñadora UX/UI enfocada en crear experiencias intuitivas y centradas en el usuario.</p>
-        <div class="button-flex">
-          <button type="button" class="btn btn-light fw-semibold">Descargar CV</button>
-          <div class="horizontal-divider"></div>
-          <button type="button" class="btn btn-dark fw-semibold">Ver proyectos</button>
+  <!--Banner -->
+  <div class="main-banner-index">
+    <div class="contenido">
+      <h1 class="animate__animated animate__fadeInDown">Hola, soy Mitzi</h1>
+      <p>Diseñadora UX/UI enfocada en crear experiencias intuitivas y centradas en el usuario.</p>
+      <div class="button-flex">
+        <button type="button" class="btn btn-light fw-semibold">Descargar CV</button>
+        <div class="horizontal-divider"></div>
+        <button type="button" class="btn btn-dark fw-semibold">Ver proyectos</button>
+      </div>
+    </div>
+  </div>
+
+  <!--Sobre mi -->
+  <div class="container px-4 py-5">
+    <h2 class="pb-2 border-bottom">Sobre mi</h2>
+    <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+
+      <!-- Columna de texto -->
+      <div class="col d-flex flex-column align-items-start gap-2">
+        <h2 class="fw-bold text-body-emphasis">Abordo el diseño de forma holística</h2>
+        <p class="text-body-secondary">
+          Al utilizar un enfoque transdisciplinario del diseño, puedo dejar atrás los límites de un método convencional
+          al combinar los fundamentos de UX con años de experiencia en marketing de productos, análisis digital,
+          investigación de mercado y gestión de marca
+        </p>
+      </div>
+
+      <!-- Bloques con íconos -->
+      <div class="col">
+        <div class="row row-cols-1 row-cols-sm-2 g-4">
+
+          <div class="col d-flex flex-column gap-2">
+            <div
+              class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+              <i class="bi bi-gear-fill"></i>
+            </div>
+            <h4 class="fw-semibold mb-0 text-body-emphasis">Featured title</h4>
+            <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p>
+          </div>
+
+          <div class="col d-flex flex-column gap-2">
+            <div
+              class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+              <i class="bi bi-gear-fill"></i>
+            </div>
+            <h4 class="fw-semibold mb-0 text-body-emphasis">Featured title</h4>
+            <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p>
+          </div>
+
+          <div class="col d-flex flex-column gap-2">
+            <div
+              class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+              <i class="bi bi-gear-fill"></i>
+            </div>
+            <h4 class="fw-semibold mb-0 text-body-emphasis">Featured title</h4>
+            <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p>
+          </div>
+
+          <div class="col d-flex flex-column gap-2">
+            <div
+              class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+              <i class="bi bi-gear-fill"></i>
+            </div>
+            <h4 class="fw-semibold mb-0 text-body-emphasis">Featured title</h4>
+            <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p>
+          </div>
+
         </div>
       </div>
     </div>
+  </div>
 
-    <!--Sobre mi -->
-    <div class="container text-center">
-      <div class="row bloque-con-margen">
-        <div class="col text-start">
-          <h1>Abordo el diseño de forma holística</h1>
-          <p>Al utilizar un enfoque transdisciplinario del diseño, puedo dejar atrás los límites de un método convencional
-            al combinar los fundamentos de UX con años de experiencia en marketing de productos, análisis digital,
-            investigación de mercado y gestión de marca.</p>
-        </div>
-        <div class="col">
-          <img src="imagenes/img.jpg" width="500" alt="200" onerror="this.onerror=null; this.src='default-image.jpg';">
-        </div>
-      </div>
-    </div>
+  <!-- Proyectos relevantes -->
+  <div class="container px-4 py-5" id="custom-cards">
+    <h2 class="pb-2 border-bottom text-white">Proyectos relevantes</h2>
+    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
 
-    <!--Cards-->
-    <div class="container px-4 py-5" id="custom-cards">
-      <h2 class="pb-2 border-bottom">Proyectos destacados</h2>
-      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-
-        <div class="col">
-          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-            style="background-image: url('imagenes/Flor.jpg'); min-height: 500px;" onerror="this.style.backgroundImage='url(default-image.jpg)';">
-            <div class="d-flex flex-column h-100 p-4 pb-4 text-white text-shadow-1">
-              <h3 class="pt-5 mt-4 mb-4 display-6 lh-1 fw-bold">¿Lo de siempre?</h3>
-              <a href="proyecto-1.html" class="stretched-link"></a>
-              <ul class="d-flex list-unstyled mt-auto">
-                <li class="me-auto">
-                  <img src="imagenes/Justo.png" alt="Bootstrap" width="32" height="32" onerror="this.onerror=null; this.src='default-image.png';"
-                    class="rounded-circle border border-white">
-                </li>
-                <li class="d-flex align-items-center me-3">
-                  <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Location">
-                    <use xlink:href="#geo-fill"></use>
-                  </svg>
-                  <small>Earth</small>
-                </li>
-                <li class="d-flex align-items-center">
-                  <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Duration">
-                    <use xlink:href="#calendar3"></use>
-                  </svg>
-                  <small>3d</small>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-            style="background-image: url('imagenes/Flor.jpg');" onerror="this.style.backgroundImage='url(default-image.jpg)';">
-            <div class="d-flex flex-column h-100 p-4 pb-4 text-white text-shadow-1">
-              <h3 class="pt-5 mt-4 mb-4 display-6 lh-1 fw-bold">Landing page</h3>
-              <a href="proyecto-2.html" class="stretched-link"></a>
-              <ul class="d-flex list-unstyled mt-auto">
-                <li class="me-auto">
-                  <img src="imagenes/Justo.png" alt="Bootstrap" width="32" height="32" onerror="this.onerror=null; this.src='default-image.png';"
-                    class="rounded-circle border border-white">
-                </li>
-                <li class="d-flex align-items-center me-3">
-                  <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Location">
-                    <use xlink:href="#geo-fill"></use>
-                  </svg>
-                  <small>Pakistan</small>
-                </li>
-                <li class="d-flex align-items-center">
-                  <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Duration">
-                    <use xlink:href="#calendar3"></use>
-                  </svg>
-                  <small>4d</small>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-            style="background-image: url('imagenes/Flor.jpg');" onerror="this.style.backgroundImage='url(default-image.jpg)';">
-            <div class="d-flex flex-column h-100 p-4 pb-4 text-shadow-1">
-              <h3 class="pt-5 mt-4 mb-4 display-6 lh-1 fw-bold">Checkout</h3>
-              <a href="proyecto-3.html" class="stretched-link"></a>
-              <ul class="d-flex list-unstyled mt-auto">
-                <li class="me-auto">
-                  <img src="imagenes/Justo.png" alt="Bootstrap" width="32" height="32" onerror="this.onerror=null; this.src='default-image.png';"
-                    class="rounded-circle border border-white">
-                </li>
-                <li class="d-flex align-items-center me-3">
-                  <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Location">
-                    <use xlink:href="#geo-fill"></use>
-                  </svg>
-                  <small>California</small>
-                </li>
-                <li class="d-flex align-items-center">
-                  <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Duration">
-                    <use xlink:href="#calendar3"></use>
-                  </svg>
-                  <small>5d</small>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
-    <!--Footer-->
-    <div class="container">
-      <footer class="py-3 my-4">
-        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+  <!-- Card 1 -->
+  <div class="col">
+    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+        style="background-image: url('unsplash-photo-1.jpg'); background-size: cover; background-position: center;">
+      <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Proyecto 1</h3>
+        <a href="proyecto-1.html" class="stretched-link" aria-label="Ir al proyecto 1"></a>
+        <ul class="d-flex list-unstyled mt-auto">
+          <li class="me-auto">
+            <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32"
+              class="rounded-circle border border-white">
+          </li>
+          <li class="d-flex align-items-center me-3">
+            <i class="bi bi-geo-alt-fill me-2"></i>
+            <small>Earth</small>
+          </li>
+          <li class="d-flex align-items-center">
+            <i class="bi bi-calendar3 me-2"></i>
+            <small>3d</small>
+          </li>
         </ul>
-        <p class="text-center text-body-secondary">© <span id="current-year"></span> Company, Inc</p>
-      </footer>
+      </div>
     </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="col">
+    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+        style="background-image: url('unsplash-photo-1.jpg'); background-size: cover; background-position: center;">
+      <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Proyecto 2</h3>
+        <a href="proyecto-2.html" class="stretched-link" aria-label="Ir al proyecto 2"></a> 
+        <ul class="d-flex list-unstyled mt-auto">
+          <li class="me-auto">
+            <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32"
+              class="rounded-circle border border-white">
+          </li>
+          <li class="d-flex align-items-center me-3">
+            <i class="bi bi-geo-alt-fill me-2"></i>
+            <small>Earth</small>
+          </li>
+          <li class="d-flex align-items-center">
+            <i class="bi bi-calendar3 me-2"></i>
+            <small>3d</small>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="col">
+    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+        style="background-image: url('unsplash-photo-1.jpg'); background-size: cover; background-position: center;">
+      <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Proyecto 3</h3>
+        <a href="proyecto-3.html" class="stretched-link" aria-label="Ir al proyecto 3"></a> 
+        <ul class="d-flex list-unstyled mt-auto">
+          <li class="me-auto">
+            <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32"
+              class="rounded-circle border border-white">
+          </li>
+          <li class="d-flex align-items-center me-3">
+            <i class="bi bi-geo-alt-fill me-2"></i>
+            <small>Earth</small>
+          </li>
+          <li class="d-flex align-items-center">
+            <i class="bi bi-calendar3 me-2"></i>
+            <small>3d</small>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
 
-    <!-- JavaScript para el efecto scroll -->
-    <script>
-      window.addEventListener("scroll", function () {
-        const header = document.getElementById("header");
-        if (window.scrollY > 50) {
-          header.classList.add("scrolled");
-        } else {
-          header.classList.remove("scrolled");
-        }
-      });
-      // Set the current year dynamically
-      document.getElementById("current-year").textContent = new Date().getFullYear();
+  <!--Footer-->
+  <div class="container">
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+      </ul>
+      <p class="text-center text-body-secondary">© <span id="current-year"></span> Company, Inc</p>
+    </footer>
+  </div>
+
+
+  <!-- JavaScript para el efecto scroll -->
+  <script>
+    window.addEventListener("scroll", function () {
+      const header = document.getElementById("header");
+      if (window.scrollY > 50) {
+        header.classList.add("scrolled");
+      } else {
+        header.classList.remove("scrolled");
+      }
+    });
+    // Set the current year dynamically
+    document.getElementById("current-year").textContent = new Date().getFullYear();
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-      </script>
+</body>
 
-  </body>
 </html>

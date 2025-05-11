@@ -1,20 +1,17 @@
-html {
+/*** GLOBAL ***/
+  html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-}
+  }
 
-/* UI */
   body {
     font-family: 'Manrope', sans-serif;
     font-size: 16px;
     line-height: 1.5;
+    color: #ffffff;
   }
 
-/* LINKS */
-  a {
-    color: #229B22;
-  }
-
+/**** INDEX HTML ****/
 /* HEADER */
   #header {
     top: 0;
@@ -27,18 +24,12 @@ html {
   }
 
   #header.scrolled {
-    background-color: rgba(255, 255, 255, 0.95); /* Ajusta opacidad/color si deseas */
+    background-color: #343434f2; /* Ajusta opacidad/color si deseas */
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   }
 
-  .header a{
-    color: white;
-    text-decoration: none;
-  }
-
-
-/* BANNER */
-  .main-banner {
+/* MAIN-BANNER-INDEX */
+  .main-banner-index {
     position: relative;
     width: 100%;
     height: calc(90vh - 100px);
@@ -48,6 +39,7 @@ html {
     background-size: cover;
   }
 
+  /* MAIN-BANNER-INDEX Centrado en x,y */
   .contenido {
     margin: 0 auto;
     padding: 10%;
@@ -60,16 +52,20 @@ html {
     text-align: center;
   } 
 
+  /* MAIN-BANNER-INDEX Titulo, Color y tamaño */
   .contenido h1 {
-    margin: 0;
     font-size: 56px;
+    color: #000000 !important;
   }
-
+  
+/* MAIN-BANNER-INDEX Subtitulo, Color, tamaño e interlineado entre titulo y subtitulo */
   .contenido p {
     margin: 32px 0;
     font-size: 18px;
+    color: #000000;
   }
 
+/* MAIN-BANNER-INDEX CTA horizontales */
   .button-flex {
     display: flex;
     justify-content: center;
@@ -77,58 +73,75 @@ html {
     gap: 24px;
   }
 
-  .horizontal-divider {
-    width: 32px;
-  }
+/* MAIN-BANNER-INDEX CTA verticales */ 
+a.card-link {
+  display: block;
+}
 
-  .bloque-con-margen {
-    margin: 80px 0;
-  }
+/**** PROYECTO-1 ****/
+/* MAIN-BANNER-PROYECTO-1 */
 
-  .banner-proyecto-1 {
-    position: relative;
-    width: 100%;
-    height: calc(56vh - 100px);
-    background-image: url(imagenes/Background-Proyecto-1.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-/* CARDS */
-  .card {
-    padding: 16px;
-    background-color: #F9F9F9;
-  }
+/* HEADER */
+#header {
+  top: 0;
+  padding: 8px 0;
+  position: fixed;
+  width: 100%;
+  background-color: transparent;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1000;
+}
 
-  .card-cover {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
+#header.scrolled {
+  background-color: #343434f2; /* Ajusta opacidad/color si deseas */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
 
-  .rounded-4 {
-    border-radius: var(--bs-border-radius-xl);
-  }
+.header a{
+  color: white;
+  text-decoration: none;
+}
 
-  .h-100 {
-    height: 100%;
-  }
+/* MAIN-BANNER-PROYECTO-1 imagen */
+.main-banner-proyecto-1 {
+  position: relative;
+  width: 100%;
+  height: calc(50vh - 100px);
+  background-image: url(imagenes/Background-Proyecto-1.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-  .shadow-lg {
-    box-shadow: var(--bs-box-shadow-lg);
-  }
+/* MAIN-BANNER-PROYECTO-1 Centrado en x,y */
+.contenido {
+  margin: 0 auto;
+  padding: 10%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+} 
 
-  .overflow-hidden {
-    overflow: hidden;
-  }
+/* MAIN-BANNER-PROYECTO-1 CTA horizontales */
+.button-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
 
-  .text-bg-dark {
-    color: #fff !important;
-    background-color: RGBA(var(--bs-dark-rgb), var(--bs-bg-opacity, 1)) !important;
-  }
+/**** PROYECTO-2 ****/
+/* HEADER */
+
+/**** PROYECTO-4 ****/
+/* HEADER */
 
 
-/* Para que el Banner sea responsivo en versiones chicas */
+/**** Responsivo Global ****/
 @media (max-width: 768px) {
   .contenido h1 {
     font-size: 36px;
