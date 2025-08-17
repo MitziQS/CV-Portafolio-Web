@@ -64,6 +64,7 @@
     gap: 16px;
   } 
 
+
   /* MAIN-BANNER-INDEX Titulo, Color y tamaño */
   .contenido h1 {
     font-size: 32px;
@@ -86,6 +87,58 @@
   display: flex;
   gap: 24px;
 }
+
+.foto-redonda {
+  border-radius: 15px; /* Ajusta el valor: 10px, 20px, 50%... */
+}
+
+  /* --- Services / Cards --- */
+.services .service-item {
+  background-color: #2c2c2c;
+  padding: 40px;
+  transition: all ease-in-out 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 5px 90px 0px rgba(77, 60, 83, 0.05);
+  height: 100%;
+}
+
+.services .service-item .icon {
+  margin-bottom: 10px;
+}
+
+.services .service-item .icon i {
+  color: #fd890d;        /* Cambia aquí el color del ícono */
+  font-size: 36px;
+  transition: 0.3s;
+}
+
+.services .service-item h3 {
+  font-weight: 700;
+  margin: 10px 0 15px 0;
+  font-size: 22px;
+}
+
+.services .service-item h3 a {
+  color: #000;
+  text-decoration: none;
+}
+
+.services .service-item p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.services .service-item:hover {
+  transform: translateY(-10px);
+  border-color: #fff;
+}
+
+.services .service-item:hover .icon i {
+  color: #0dcaf0;        /* Cambia aquí el color del ícono al hover */
+}
+
+
 
 /* PROYECTOS RELEVANTES - Cards */
   .card-altura-personalizada {
