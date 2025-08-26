@@ -1,141 +1,208 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="es" data-bs-theme="dark">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>Mitzi Soria | Product Designer</title>
 
     <!--Vincula bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"/>
 
    <!-- Bootstrap Icons CDN -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"/>
 
     <!--Vincula CSS -->
     <link rel="stylesheet" type="text/css" href="style.css">
 
-    <!--tipografia -->
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&display=swap" rel="stylesheet">
+	<!-- Tipografía -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700;800&display=swap" rel="stylesheet"/>
 
     <!--animate style-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-  </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  
+</head>
 
   <body>
-		<!--Header-->
-		<nav id="header" class="navbar navbar-expand-lg fixed-top mi-navbar">
-			<div class="container d-flex justify-content-between align-items-center">
-			<a class="navbar-brand" href="index.html">
-				<img src="imagenes/Logo-personal.png" width="32" height="32" alt="Logo" onerror="this.onerror=null; this.src='default-logo.png';">
-				<span class="fw-bold">Mitzi Soria</span>
-			</a>
+  <!--Header-->
+  <nav id="header" class="navbar navbar-expand-lg fixed-top mi-navbar">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a class="navbar-brand" href="index.html">
+        <img src="imagenes/Logo-personal.png" width="32" height="32" alt="Logo"
+          onerror="this.onerror=null; this.src='default-logo.png';">
+        <span class="fw-bold">Mitzi Soria</span>
+      </a>
 
-			<!-- Enlaces a redes -->
-			<div class="d-flex align-items-center gap-3">
-				<a href="https://www.linkedin.com/in/soria-mitzi/" target="_blank">
-				<img src="imagenes/linkeding.png" alt="LinkedIn" width="32" height="32" onerror="this.onerror=null; this.src='default-linkedin-icon.png';">
-				</a>
+      <!-- Enlaces a redes -->
+      <div class="d-flex align-items-center gap-3">
+        <a href="https://www.linkedin.com/in/soria-mitzi/" target="_blank" class="social-icon">
+          <i class="bi bi-linkedin" style="font-size: 1.5rem;"></i>
+        </a>
 
-				<a href="https://www.instagram.com/mitziqs/profilecard/?igsh=MWx5cWFmYWIwbjY4aA==" target="_blank">
-				<img src="imagenes/instagram.png" alt="Instagram-Mitzi-Q" width="32" height="32" onerror="this.onerror=null; this.src='default-behance.png';">
-				</a>
+        <a href="https://www.instagram.com/mitziqs/profilecard/?igsh=MWx5cWFmYWIwbjY4aA==" target="_blank" class="social-icon">
+          <i class="bi bi-instagram" style="font-size: 1.5rem;"></i>
+        </a>
+      </div>
+    </div>
+</nav>
+
+  <!-- Banner -->
+    <div class="main-banner-proyecto-1">
+      <div class="contenido" role="img" aria-label="Ilustración del proyecto"></div>
+    </div>
+
+  <!-- Problema, misión, cliente y servicio -->
+    <main class="container py-5 project-body">
+      <header class="mb-4">
+        <h2 class="h2">¿Lo de siempre?</h2>
+      </header>
+
+      <!-- Fila 1: Izquierda (Misión + Contribuciones) / Derecha (Cliente + Servicios) -->
+      <div class="row g-4 align-items-start">
+        <!-- Izquierda -->
+        <section class="col-12 col-md-8">
+          <article class="card mb-4">
+            <div class="card-body">
+              <h3 class="h4 mb-3">Misión</h3>
+              <p>
+                Ayudar a Jüsto a transformar su funcionalidad “Lo de siempre” en un canal eficiente de recompra para usuarios recurrentes, 
+                haciendo su experiencia de compra más rápida, intuitiva y consistente entre app y web. Aprovechar hábito de consumo para 
+                mejorar recompra (20% usa “Lo de siempre”).
+              </p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-body">
+              <h3 class="h4 mb-3">Mi contribución</h3>
+              <p>
+                <li>Investigación (encuesta, benchmarking) </li>
+                <li>Definición de objetivos y MVP. </li>
+                <li>Hipótesis e ideación (wireframes) </li>
+                <li>Desarrollo de prototipo visual antes/después.</li>
+              </p>
+            </div>
+          </article>
+        </section>
+
+        <!-- Derecha -->
+        <aside class="col-12 col-md-4">
+          <article class="card mb-4">
+            <div class="card-body">
+              <h3 class="h4 mb-3">Cliente</h3>
+              <p class="mb-3">
+                <strong>Justo.mx</strong><br />
+                Startup de supermercado 100% digital
+                México, CDMX
+              </p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-body">
+              <h3 class="h4 mb-3">Servicios</h3>
+              <ul class="service-list">
+                <li>User Research</li>
+                <li>UX Strategy</li>
+                <li>Wireframing & Prototyping</li>
+                <li>UI Design</li>
+                <li>Cross-platform Consistency</li>
+              </ul>
+            </div>
+          </article>
+        </aside>
+      </div>
+
+      <!-- Fila 2: Impacto a todo el ancho -->
+      <section class="row g-4 mt-4">
+        <div class="col-12">
+          <article class="card">
+            <div class="card-body">
+              <h3 class="h4 mb-3">Impacto</h3>
+              <p class="mb-4">
+                El proyecto resultó en un lanzamiento exitoso para Candidate Labs. Consiguieron
+                clientes como Notion, Deel, Coda, Retool y Airbase, entre otras startups financiadas
+                por VC.
+              </p>
+
+              <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 gy-3 impact-grid">
+                <div class="col">
+                  <div class="d-flex align-items-start gap-3">
+                    <div class="impact-number h4 mb-0">20%</div>
+                    <div>Aumentamos el uso de esta funcionalidad</div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="d-flex align-items-start gap-3">
+                    <div class="impact-number h4 mb-0">40%</div>
+                    <div>Reducir pasos en recompra</div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="d-flex align-items-start gap-3">
+                    <div class="impact-number h4 mb-0">+15%</div>
+                    <div>Mejorar Home Add to Cart</div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="d-flex align-items-start gap-3">
+                    <div class="impact-number h4 mb-0">USD 5M</div>
+                    <div>Ingresos anuales alcanzando rentabilidad.</div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="d-flex align-items-start gap-3">
+                    <div class="impact-number h4 mb-0">#1 G2</div>
+                    <div>Primer lugar en reseñas de “search firm”.</div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="d-flex align-items-start gap-3">
+                    <div class="impact-number h4 mb-0">70+</div>
+                    <div>Startups VC como clientes.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+	<!--PASO 1 - CONTENT -->
+	<div class="container project-body">
+	  <div class="project-description-wrap">
+			<div class="step-title candidate-labs">El proceso – Paso 1 </div>
+			
+			<!-- Bloque: DESCUBRIMIENTO -->
+			<div class="project-block">
+				  <h3>Descubrimiento</h3>
+				  <p> Homologar la experiencia entre app y web para optimizar la recompra. Actualmente, en web los usuarios pueden agregar todos los productos de una compra anterior, mientras que en la app deben hacerlo uno por uno y solo pueden ver 10 productos previos. Buscamos mejorar la usabilidad, aumentar la métrica de "Home Add to Cart" y facilitar que los usuarios recurrentes hagan su súper más rápido.</p>
 			</div>
-			</div>
-		</nav>
-
-		<!--Banner -->
-		<div class="main-banner-proyecto-2">
-			<div class="contenido"></div>
 		</div>
-
+	</div>
 		<br>
+   <!-- RECUADRO GRIS -->
+   <div class="container project-body">
+   <div class="project-description-wrap">
 
-		<!--Content -->
-			<div class="container project-body">
-				<div class="project-description-wrap">
+   <!-- Bloque: PROBLEMA -->
+   <div class="project-block">
+        <div class="background-box">
+          <div class="bi bi-gear-fill" alt="Icono de bloque destacado">
+            <div class="text-container">
+             <p><strong>Problema</strong></p>
+             <P>El 70% de los usuarios recurrentes tiende a repetir los mismos productos en sus compras, lo que indica un hábito de consumo constante. Sin embargo, solo el 20% de estos usuarios utiliza el componente "Lo de siempre" para agilizar su compra, lo que sugiere una oportunidad de mejora en su visibilidad, usabilidad o comunicación.</P>
+            </div>
+          </div>
+        </div>
+   </div>
+
+ <br>
 			
-					<!-- Encabezado de sección -->
-					<div>
-						<div class="step-title candidate-labs">The Process – Step 2</div>
-					</div>
-				
-					<!-- Bloque: Discovery -->
-					<div class="project-block">
-						<h3>Discovery</h3>
-						<p>
-						We kicked off the project with a discovery call where I met all three founders,
-						talked to them about their vision for the company and assessed what they need to
-						make this project a success. We discussed what they needed for their website and
-						their brand. To finalize this step we defined a roadmap and I created a project
-						timeline showing all its stages.
-						</p>
-					</div>
-				
-					<!-- Bloque: Logo & Visual Identity -->
-					<div class="project-block">
-						<h3>Logo & Visual Identity</h3>
-						<p>
-						Once we were all aligned, the next step was to design the logo and define the
-						visual identity as that would inform all further visual design decisions. We
-						explored a few different directions for the logo and when we selected one of them,
-						we explored further to select brand colors and typeface.
-						</p>
-					</div>
-			
-				</div>
-			</div>
-
-			<br>
-
-		<!--CONTAINER GRIS -->
-			<div class="container project-body">
-			<div class="background-box">
-				<div class="bi bi-gear-fill" alt="Icono de bloque destacado"></div>
-				<div class="text-container">
-					<p><strong>UX/UI</strong> – Diana Agronov, Alexey Pavo</p>
-					<p><strong>Leads</strong> – Yulia Leder (UX/UI), Ethan Sharabi (Dev Lead)</p>
-				</div>
-			</div>
-
-			<br>
-
-		<!--Content -->
-		<div class="container project-body">
-			<div class="project-description-wrap">
-		
-				<!-- Encabezado de sección -->
-				<div>
-					<div class="step-title candidate-labs">The Process – Step 1</div>
-				</div>
-			
-				<!-- Bloque: Discovery -->
-				<div class="project-block">
-					<h3>Discovery</h3>
-					<p>
-					We kicked off the project with a discovery call where I met all three founders,
-					talked to them about their vision for the company and assessed what they need to
-					make this project a success. We discussed what they needed for their website and
-					their brand. To finalize this step we defined a roadmap and I created a project
-					timeline showing all its stages.
-					</p>
-				</div>
-			
-				<!-- Bloque: Logo & Visual Identity -->
-				<div class="project-block">
-					<h3>Logo & Visual Identity</h3>
-					<p>
-					Once we were all aligned, the next step was to design the logo and define the
-					visual identity as that would inform all further visual design decisions. We
-					explored a few different directions for the logo and when we selected one of them,
-					we explored further to select brand colors and typeface.
-					</p>
-				</div>
-		
-			</div>
-		</div>
-
+  <!--PASO 2 -->
+  <div class="container project-body">
+    <div class="project-description-wrap">
+      <div class="step-title candidate-labs">El proceso – Paso 2</div>
 		<!--Text + IMG-->
 		<div class="container my-5">
 			<div class="row align-items-center">
@@ -150,11 +217,39 @@
 		
 			<!-- Columna de imagen -->
 			<div class="col-md-6 text-center">
-				<img src="imagenes/Cartilla meli.png" alt="Descripción de la imagen" class="img-fluid rounded">
+				<img src="imagenes/aguacate.png" alt="Descripción de la imagen" width="300" height="200" class="img-fluid rounded" class="img-fluid rounded">
 			</div>
 		
 			</div>
 		</div>
+	
+      
+  <!-- PASO 3 -->
+	<div>
+		<div class="step-title candidate-labs">El proceso – Paso 3</div>
+	</div>
+	 <!-- Bloque: Discovery -->
+	 <div class="project-block">
+				<h3>Discovery</h3>
+				<p>
+				We kicked off the project with a discovery call where I met all three founders,
+				talked to them about their vision for the company and assessed what they need to
+				make this project a success. We discussed what they needed for their website and
+				their brand. To finalize this step we defined a roadmap and I created a project
+				timeline showing all its stages.
+				</p>
+	 </div>
+		
+	 <!-- Bloque: Logo & Visual Identity -->
+	 <div class="project-block">
+				<h3>Logo & Visual Identity</h3>
+				<p>
+				Once we were all aligned, the next step was to design the logo and define the
+				visual identity as that would inform all further visual design decisions. We
+				explored a few different directions for the logo and when we selected one of them,
+				we explored further to select brand colors and typeface.
+				</p>
+	 </div>
 
 		<!--Footer-->
 		<div class="container">

@@ -7,9 +7,37 @@
   body {
     font-family: 'Manrope';
     font-size: 16px;
-    line-height: 1.5;
-    color: #ffffff;
+    line-height: 30px;
+    background-color: #121212;
   }
+
+  p {
+    margin-bottom: 1.5rem; /* espacio entre párrafos */
+    font-weight: 400; /* peso regular */
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700; /* bold (equivalente a semibold en este caso) */
+  }
+  
+  @media (max-width: 768px) {
+    .contenido h1 {
+      font-size: 36px;
+    }
+  
+  
+    .button-flex {
+      flex-direction: column;
+      gap: 18px;
+    }
+  
+    .horizontal-divider {
+      display: none;
+    }
+  }
+
+
+  
 
 /**** INDEX HTML ****/
 /* HEADER */
@@ -251,30 +279,7 @@
   border: 1px solid transparent;
 }
 
-.p {
-  margin: 0;
-  color: #ffffff;
-  font-size: 0.95rem;
-}
 
 
-/**** Responsivo Global ****/
-@media (max-width: 768px) {
-  .contenido h1 {
-    font-size: 36px;
-  }
 
-  
-  .contenido p {
-    font-size: 16px;
-  }
 
-  .button-flex {
-    flex-direction: column;
-    gap: 16px;
-  }
-
-  .horizontal-divider {
-    display: none;
-  }
-}
