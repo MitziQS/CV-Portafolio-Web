@@ -36,7 +36,12 @@
     }
   }
 
-
+  .card {
+    border: none !important;
+    background-color: #1e1e1e;  /* el color que quieras */
+    border: none;               /* sin delineado */
+    color: #ffffff;   
+  }
   
 
 /**** INDEX HTML ****/
@@ -174,10 +179,12 @@
   }
 
 /* PROYECTOS RELEVANTES - Animación Cards */
-  .card:hover {
-    transform: scale(1.03);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
+.card-animada:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
 
 /* PROYECTOS RELEVANTES - Animación Cards */
   .card-cover {

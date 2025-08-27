@@ -13,7 +13,6 @@
 
     <!--Vincula CSS -->
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="styles/style.css?v=20250825-2242">
 
 	<!-- Tipografía -->
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700;800&display=swap" rel="stylesheet"/>
@@ -139,7 +138,7 @@
             <div class="card-body">
               <h3 class="h4 mb-3">Impacto</h3>
               <p class="mb-4">
-                El rediseño convirtió una funcionalidad poco utilizada en un recurso valioso para clientes frecuentes. 
+                El rediseño convirtió una funcionalidad poco utilizada en un recurso valioso para clientes frecuentes.<br> 
                 El impacto se reflejó tanto en la experiencia de usuario como en métricas clave de negocio:
               </p>
 
@@ -175,11 +174,15 @@
 	  <div class="project-description-wrap">
 			<div class="step-title candidate-labs">El proceso – Paso 1 </div>
 			
-			<!-- Bloque: DESCUBRIMIENTO -->
 			<div class="project-block">
 				  <h3>Investigación y descubrimiento</h3>
-				  <p> Homologar la experiencia entre app y web para optimizar la recompra. Actualmente, en web los usuarios pueden agregar todos los productos de una compra anterior, mientras que en la app deben hacerlo uno por uno y solo pueden ver 10 productos previos. Buscamos mejorar la usabilidad, aumentar la métrica de "Home Add to Cart" y facilitar que los usuarios recurrentes hagan su súper más rápido.</p>
-			</div>
+				  <p> Antes de diseñar, necesitaba entender por qué solo el 20% de usuarios usaban “Lo de siempre”.
+            <ul class="service-list">
+            <li>Encuestas a usuarios recurrentes: identifiqué que muchos preferían buscar manualmente porque la sección no era visible o no respondía a cómo organizaban su compra.</li>
+            <li>Workshops internos: junto con PMs y diseñadores analizamos el journey y detectamos momentos donde podíamos recomendar productos recurrentes.</li> 
+            <li>Benchmarking: revisé apps como Walmart, Instacart y Gopuff para ver cómo resolvían la recompra; descubrí que la mayoría privilegiaba claridad visual y agrupación por categorías.</li>
+          </p>
+        </div>
 		</div>
 	</div>
 		<br>
@@ -192,7 +195,7 @@
         <div class="background-box">
           <div class="bi bi-gear-fill" alt="Icono de bloque destacado">
             <div class="text-container">
-             <p><strong>Problema</strong></p>
+             <p><strong>Aprendizaje</strong></p>
              <P>El 70% de los usuarios recurrentes tiende a repetir los mismos productos en sus compras, lo que indica un hábito de consumo constante. Sin embargo, solo el 20% de estos usuarios utiliza el componente "Lo de siempre" para agilizar su compra, lo que sugiere una oportunidad de mejora en su visibilidad, usabilidad o comunicación.</P>
             </div>
           </div>
@@ -201,30 +204,46 @@
 
  <br>
 			
-  <!--PASO 2 -->
-  <div class="container project-body">
-    <div class="project-description-wrap">
-      <div class="step-title candidate-labs">El proceso – Paso 2</div>
-		<!--Text + IMG-->
-		<div class="container my-5">
-			<div class="row align-items-center">
-			
-			<!-- Columna de texto -->
-			<div class="col-md-6">
-				<h3>Título atractivo</h3>
-				<p>
-				Este es un párrafo de ejemplo para acompañar tu imagen. Aquí puedes explicar el contenido del proyecto, contar una historia o destacar algo importante.
-				</p>
-			</div>
-		
-			<!-- Columna de imagen -->
-			<div class="col-md-6 text-center">
-				<img src="imagenes/aguacate.png" alt="Descripción de la imagen" width="300" height="200" class="img-fluid rounded" class="img-fluid rounded">
-			</div>
-		
-			</div>
-		</div>
-	
+<!-- PASO 2 -->
+<div class="container project-body">
+  <div class="project-description-wrap">
+    <div class="row align-items-start"> <!-- 👈 esto asegura que ambos inicien arriba -->
+      
+      <!-- Columna de texto -->
+      <div class="col-md-6">
+        <div class="step-title candidate-labs">El proceso – Paso 2</div>
+        <h3>Definir</h3>
+        <p>
+          Con los hallazgos claros, sintetizamos la oportunidad y trazamos hipótesis.
+          <br>
+          1.	Agrupar productos por departamentos en lugar de fechas haría la navegación más intuitiva. <br>
+          2.	Destacar “Lo de siempre” en la home, con mejor visibilidad, aumentaría su uso. <br>
+          3.	Ofrecer más control (eliminar ítems, manejar agotados) reduciría frustraciones. <br>
+          Métricas de éxito:
+          •	Aumentar uso de la funcionalidad (+20%). <br>
+          •	Reducir pasos en recompra (–40%). <br>
+          •	Mejorar Home Add to Cart (+15%). <br>
+          MVP: definir un entregable viable y escalable: <br>
+          •	Mejorar visibilidad. <br>
+          •	Ordenar por departamentos. <br>
+          •	Incorporar lógica de data para sugerencias.<br>
+        
+        Aprendizaje: alinear las hipótesis con métricas tangibles dio foco al equipo y facilitó la priorización.        </p>
+      </div>
+
+      <!-- Columna de imagen -->
+      <div class="col-md-6 text-center">
+        <img src="imagenes/aguacate.png" 
+             alt="Descripción de la imagen" 
+             width="300" height="200" 
+             class="img-fluid rounded">
+      </div>
+
+
+
+    </div>
+  </div>
+</div>	
       
   <!-- PASO 3 -->
 	<div>
@@ -232,26 +251,53 @@
 	</div>
 	 <!-- Bloque: Discovery -->
 	 <div class="project-block">
-				<h3>Discovery</h3>
+				<h3>Diseñar</h3>
 				<p>
-				We kicked off the project with a discovery call where I met all three founders,
-				talked to them about their vision for the company and assessed what they need to
-				make this project a success. We discussed what they needed for their website and
-				their brand. To finalize this step we defined a roadmap and I created a project
-				timeline showing all its stages.
-				</p>
+          Con el MVP definido, pasé a exploraciones visuales y de flujo.
+          •	Wireframes iniciales: exploré dos caminos:
+          1.	Listas planas por fecha (modelo actual).
+          2.	Agrupación por categorías (más alineada al modelo mental del usuario).
+          •	Pros/Contras: la segunda opción resultaba más intuitiva, escalable y consistente con la arquitectura de Jüsto.
+          •	UI exploraciones: diseñé carruseles y tarjetas con foco en visibilidad y claridad.
+          •	Microinteracciones propuestas:
+          •	Botón “Agregar todos” con contador dinámico.
+          •	Estados claros para productos agotados o no deseados.
+        
+        Aprendizaje: la ideación no se trató solo de pantallas, sino de proponer decisiones de producto que dieran control real al usuario.				</p>
 	 </div>
 		
-	 <!-- Bloque: Logo & Visual Identity -->
+  <!-- PASO 4 -->
+	<div>
+		<div class="step-title candidate-labs">El proceso – Paso 4</div>
+	</div>
+	 <!-- Bloque: Discovery -->
 	 <div class="project-block">
-				<h3>Logo & Visual Identity</h3>
+				<h3>Prototipo y pruebas</h3>
 				<p>
-				Once we were all aligned, the next step was to design the logo and define the
-				visual identity as that would inform all further visual design decisions. We
-				explored a few different directions for the logo and when we selected one of them,
-				we explored further to select brand colors and typeface.
-				</p>
+          Transformé wireframes en prototipos interactivos y comparé escenarios.
+          •	Antes: limitada a 10 productos, sin agrupación ni control.
+          •	Después: sección destacada en home, categorizada, con mayor personalización.
+          •	Feedback interno: el equipo validó que la navegación por departamentos era más clara y eficiente.
+        
+        Aprendizaje: iterar con prototipos permitió que todos visualizaran el impacto de las decisiones, acelerando acuerdos entre stakeholders.				</p>
 	 </div>
+
+  <!-- PASO 5 -->
+	<div>
+		<div class="step-title candidate-labs">El proceso – Paso 5</div>
+	</div>
+	 <!-- Bloque: Discovery -->
+	 <div class="project-block">
+				<h3>Entrega</h3>
+				<p>
+          La última etapa fue dejarlo listo para escalar.
+          •	UI final: limpio, consistente y con jerarquía clara para “Lo de siempre”.
+          •	Documentación: entregables claros en Figma con notas para desarrollo.
+          •	Handoff: sesiones con devs para garantizar implementación sin pérdida de detalle.
+          •	Escalabilidad: definí componentes que pudieran crecer con futuras mejoras de recompra o cross-selling.
+        
+        Aprendizaje: documentar y pensar en escalabilidad permitió que el diseño no fuera un “parche”, sino parte de una evolución más amplia de la experiencia.	 </div>
+
 
 		<!--Footer-->
 		<div class="container">
