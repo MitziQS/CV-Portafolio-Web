@@ -37,12 +37,17 @@
   }
 
   .card {
+    align-items: flex-start;
+    gap: 16px;
     border: none !important;
-    background-color: #1e1e1e;  /* el color que quieras */
+    background-color: #1E1E1E;  /* el color que quieras */
     border: none;               /* sin delineado */
-    color: #ffffff;   
+    color: #ffffff;  
+    border: none !important;
+    border-radius: 6px;
+    padding: 16px 20px;
   }
-  
+ 
 
 /**** INDEX HTML ****/
 /* HEADER */
@@ -274,17 +279,7 @@
 }
 
 
-/*CONTAINER GRIS*/
-.background-box {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  background-color: #333333;
-  border-radius: 6px;
-  padding: 16px 20px;
-  margin-bottom: 1rem;
-  border: 1px solid transparent;
-}
+
 
 
 
