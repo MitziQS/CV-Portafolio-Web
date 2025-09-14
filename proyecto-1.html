@@ -181,9 +181,21 @@
                   los mismos productos en sus compras, lo que indica un hábito de consumo constante. Solo el 20% de estos 
                   usuarios utiliza el componente "Lo de siempre" para agilizar su compra, lo que sugiere una oportunidad 
                   de mejora en su visibilidad, usabilidad o comunicación. 
-                  <br>
-                  Incie el proyecto con dos workshops internos: junto con PMs donde bajamos la problematica con ayuda de una Matriz CSD (Certezas, Suposiciones y Dudas) y con diseñadores analizamos el journey y detectamos momentos donde podíamos recomendar productos recurrentes.</li> 
                 </p>
+
+                <p><span class="workshop-title">1. Workshop con PMs</span></p>
+                <ul>
+                  <li><strong>Herramienta:</strong> Matriz CSD (Certezas, Suposiciones y Dudas)</li>
+                  <li><strong>Objetivo:</strong> bajar a tierra la problemática, identificar lo que sabíamos, lo que asumíamos y lo que necesitábamos validar.</li>
+                  <li><strong>Resultado:</strong> una visión compartida entre negocio y diseño sobre el alcance inicial del reto.</li>
+                </ul>
+
+                <p><span class="workshop-title">2. Workshop con diseñadores</span></p>
+                <ul>
+                  <li><strong>Herramienta:</strong> User Journey Map</li>
+                  <li><strong>Objetivo:</strong> analizar el recorrido del usuario en la plataforma, detectar fricciones y momentos clave donde se podían introducir recomendaciones de productos recurrentes.</li>
+                  <li><strong>Resultado:</strong> hallazgos sobre puntos de decisión relevantes y posibles oportunidades para impactar la conversión y la retención.</li>
+                </ul> 
               </div>
             </div>
           </div>
@@ -244,63 +256,59 @@
           <div class="step-title candidate-labs">El proceso – Paso 2</div>
           
           <div class="project-block">
-            <h3>Definir</h3>
-            <p>Los hallazgos claros, sintetizamos la oportunidad y trazamos hipótesis.</p> 
+            <h3>Definir - Primer MVP</h3>
+            <p>Tras la investigación y el descubrimiento, identificamos múltiples áreas de oportunidad para mejorar la experiencia 
+              de recompra en “Lo de siempre”: desde la visibilidad en el home, la forma de organizar los productos, hasta la 
+              manera de sugerir artículos relacionados o en promoción. <br>
+              <br>
+              Sin embargo, no todas las ideas eran viables de implementar en el corto plazo. Para avanzar de forma realista, 
+              priorizamos aquellas soluciones que combinaban tres criterios:
+              <ul>
+                <li><strong>Impacto en negocio:</strong> potenciar la métrica de Home Add to Cart.</li>
+                <li><strong>Valor para el usuario:</strong> reducir el esfuerzo cognitivo al hacer su compra recurrente.</li>
+                <li><strong>Viabilidad técnica:</strong> aprovechar data y componentes existentes.</li>
+              </ul>
+            De esta priorización surgió el alcance del primer MVP, enfocado en:
+            </p> 
 
              <!-- Card: hallazgos -->
              <section id="services" class="services section mt-4">
               <div class="row gy-4 justify-content-start">
                 
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                  <div class="service-item position-relative">
-                      <div class="icon">
-                        <i class="bi bi-1-circle"></i>
-                      </div>
-                      <p>Agrupar productos por departamentos en lugar de fechas haría la navegación más intuitiva.</p>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
                     <div class="service-item position-relative">
-                      <div class="icon">
-                        <i class="bi bi-2-circle"></i>
-                      </div>
-                      <p>Destacar “Lo de siempre” en la home, con mejor visibilidad, aumentaría su uso.</p>
+                      <div class="icon"> <i class="bi bi-arrow-up"> </i></div>
+                      <h5 class="card-title lh-base">Mejorar la visibilidad:</h5>
+                      <p>
+                        Priorizar la funcionalidad dentro de la arquitectura de la home para que los usuarios 
+                        la identifiquen de inmediato.
+                      </p>
                     </div>
-                  </div>
+                </div>
 
-                  <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                     <div class="service-item position-relative">
-                      <div class="icon">
-                        <i class="bi bi-3-circle"></i>
-                      </div>
-                      <p>Ofrecer más control (eliminar ítems, manejar agotados) reduciría frustraciones.</p>
+                      <div class="icon"> <i class="bi bi-layout-text-window"> </i></div>
+                      <h5 class="card-title lh-base">Mejor usabilidad:</h5>
+                      <p>
+                        Organizar los productos por departamento y frecuencia de compra, reduciendo fricción y 
+                        facilitando la recompra.
+                      </p>
                     </div>
-                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-item position-relative">
+                      <div class="icon"> <i class="bi bi-graph-up"> </i></div>
+                      <h5 class="card-title lh-base">Data como soporte:</h5>
+                      <p>
+                        Implementar un modelo basado en tiempo y frecuencia de compra que sugiera productos relevantes, 
+                        anticipando las necesidades del usuario.
+                      </p>
+                    </div>
                 </div>
               </div>
-            
-              <div class="mt-4">
-              <h5>Métricas de éxito</h5>                
-              <p>
-                •	Aumentar uso de la funcionalidad (+20%). <br>
-                •	Reducir pasos en recompra (–40%). <br>
-                •	Mejorar Home Add to Cart (+15%). <br>
-              </p>
-
-              <div class="mt-4">
-              <h5>Definición</h5>                
-              <p>
-                En conjunto con mi PM seleccionamos las mejoras para el primer MVP, definir un entregable viable y escalable: <br>
-                •	Mejorar visibilidad. <br>
-                •	Ordenar por departamentos. <br>
-                •	Incorporar lógica de data para sugerencias.<br>
-                
-                Aprendizaje: alinear las hipótesis con métricas tangibles dio foco al equipo y facilitó la priorización. 
-            </p>
-          </div>
-        </div>
-      </section>
+            </section>
 
       <br>
 
@@ -311,61 +319,27 @@
       
       <!-- PASO 3 -->
       <section class="row g-4">
-        <div class="col-12 col-md-9">
 
           <div class="project-description-wrap">
             <div class="step-title candidate-labs">El proceso – Paso 3</div>
             <div class="project-block">
               <h3>Diseñar</h3>
               <p>
-                Para explorar soluciones, organicé un workshop con otros diseñadores. Nos dimos cuenta de que la pregunta no 
-                era únicamente cómo mostrar lo de siempre, sino en qué momento del journey tenía más sentido recordarle al 
-                usuario sus productos recurrentes. <br>
-                  <br>
-                  Wireframes iniciales: exploré dos caminos:
-                  <ul class="service-list">
-                  <li>Listas planas por fecha (modelo actual).</li>
-                  <li>Agrupación por categorías (más alineada al modelo mental del usuario).</li> 
-                  <br>
-                  <div class="text-center my-4">
-                    <img src="imagenes/Wireframe-siempre.png" class="img-fluid" alt="Análisis competitivo de apps de supermercado"/>
-                  </div>
-                  <li>Pros/Contras: la segunda opción resultaba más intuitiva, escalable y consistente con la arquitectura de Jüsto.</li>
-                  <li>UI exploraciones: diseñé carruseles y tarjetas con foco en visibilidad y claridad.</li>
-                </div>
-
-                <div>
-                  Probamos ideas como chips para filtrar por descuentos, agrupaciones inteligentes que se ajustaran al patrón de compra, 
-                  y hasta la posibilidad de relacionar productos (si compras leche, ¿quieres agregar café?). Estos ejercicios me ayudaron 
-                  a abrir el espectro: no era solo un carrusel, era un espacio donde podíamos reducir la carga cognitiva del usuario.  
-                </div>
-                </p>
-               </div>
-              </div>
-            </div>
-          </section>
-
-  
-
-      <!-- Aprendizaje -->
-      <section class="row gap-2">
-        <div class="col-12 col-md-9">
-
-          <article class="card mb-4">
-            <div class="card-body">
-              <div class="d-flex align-items-start gap-2 mb-3">
-                <i class="bi bi-gear-fill" aria-hidden="true"></i>
-                <h3 class="h4 mb-0">Aprendizaje</h3>
-              </div>
-      
-              <p class="mb-0">
-                La ideación no se trató solo de pantallas, sino de proponer 
-                decisiones de producto que dieran control real al usuario.
+                Me di cuenta de que contaba con varias areas de oprtunidad a lo largo de journey en las cuales podria impactar 
+                en el usuario para facilitar la recompra. No era únicamente cómo mostrar lo de siempre, sino en qué momento del 
+                journey tenía más sentido recordarle al usuario sus productos recurrentes.
               </p>
             </div>
-          </article>
+          </div>
+          <div class="text-center my-4">
+            <img src="imagenes/Proyecto1-Paso3.png" class="img-fluid" alt="Análisis competitivo de apps de supermercado"/>
+          </div>
+    
         </div>
       </section>
+
+
+
 
       <br>
 
@@ -390,18 +364,20 @@
 
            <div> 
             <p>
-              <div class="text-center my-4">
-                <img src="imagenes/prototipo.jpg" class="img-fluid rounded-4" alt="Análisis competitivo de apps de supermercado"/>
-              </div>  
               En paralelo validamos con data qué tan viable era priorizar productos por frecuencia y tiempo de compra. 
               El prototipo no solo resolvía un tema visual, también abría la puerta a construir inteligencia alrededor del hábito 
               de consumo: recomendaciones, sustitutos cuando un producto está agotado o incluso destacar lo que más compras con cashback.            
             </p>
            </div>
           </div>
+          <div class="text-center my-4">
+            <img src="imagenes/Proyecto1-Paso4.png" class="img-fluid" alt="Análisis competitivo de apps de supermercado"/>
+          </div>
+    
         </div>
       </section>
-      <br>
+
+
       
       <!-- PASO 5 -->
       <section class="row g-4">
@@ -416,8 +392,9 @@
                 Más allá de la métrica, las entrevistas me confirmaron que la organización por departamentos conectaba con la forma en 
                 que la gente realmente hace sus compras. <br>
                 <br>
-                Sin embargo, también aparecieron nuevas preguntas: ¿cómo priorizar de manera más inteligente para que no aparezcan 
-                productos que no necesitas tan seguido? ¿Cómo sugerir sustitutos sin ser invasivos? <br>
+                <div class="text-center my-4">
+                  <img src="imagenes/prototipo.jpg" class="img-fluid rounded-4" alt="Análisis competitivo de apps de supermercado"/>
+                </div>  
                 <br>
                 Estos hallazgos me recordaron que un producto nunca está terminado: cada versión nos acerca, pero también revela nuevas 
                 aristas. La evolución de Lo de siempre no fue solo un cambio visual, fue el inicio de un sistema de personalización que 
